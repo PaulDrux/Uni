@@ -1,136 +1,20 @@
 <!doctype html>
 <html lang="de">
-<!-- Head-Teil -->
-<head>
-  <meta charset="utf-8" />
-  <title>The Irish Setter</title>
-  <meta name="description" content="Irish Setter" />
-  <meta name="author" content="Paul Drux" />
-  <meta name="keywords" content="Irish Setter" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <script src="javascript/jsSetter.js"></script>
-</head>
-<!-- onload ruft die Funktion beim Start der Seite mit auf -->
-<body onload="animation();" id="bdshow">
+  <!-- Head-Teil -->
+  <head>
+    <meta charset="utf-8" />
+    <title>The Irish Setter</title>
+    <meta name="description" content="Irish Setter" />
+    <meta name="author" content="Paul Drux" />
+    <meta name="keywords" content="Irish Setter" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="javascript/jsSetter.js"></script>
+  </head>
 
-<header>
-  <div id="Home" class="header">
-    <h1>The Irish Setter</h1>
-    <p>Erfahrungen | Fotos | Gemeinschaft</p>
-  </div>
-</header>
+  <body>
 
-<!-- Navigationsbar -->
-  <div class="topnav">
-    <ul>
-      <li><a class="active" href="#Home">Home</a></li>
-      <li><a href="#Geschichte">Geschichte</a><li>
-      <li><a href="#Wesen">Wesen</a></li>
-      <li><a href="#Pflege">Pflege</a></li>
-      <li><a href="#Blog">Blog</a></li>
-    </ul>
-  </div>
-<div id="container">
+  <header>
+  </header>
 
-<!-- Blogeinträge -->
-
-</div>
-<!-- Geschichte -->
-  <div id="Geschichte" class="eintrag">
-    <h2>Geschichte</h2>
-    <p>Der Rasse-Ursprung des Irish Setter wird in spanischen Pointern sowie französischen Spaniels gesehen. Im 17. Jahrhundert kreuzte ein englischer Züchter Setter ein, wodurch ein rot-weißer Setter-ähnlicher Typ entstand
-       Erst später selektierte man auf rein rote Hunde. Ziel war ein Jagdgebrauchshund, der neben dem Vorstehen, auch zum aufstöbern und apportieren von Federwild eingesetzt werden konnte.
-       Windhunde, aber auch Terrier, sind für diese Aufgabe eher wenig geeignet, da sie die Vögel eher verscheuchen. Der Unterschied beim Setter wird durch seinen Namen deutlich:
-       Das Wort Setter leitet sich vom englischen „to set“ ab, übersetzt in etwa „erstarren/festsetzen“. Die Aufgabe des Setters war es, Federwild zu finden, es durch ruhiges abliegen oder Vorstehen anzuzeigen und so seinem Herrn zu ermöglichen, es mit Netzen einzufangen oder zu schießen.
-       Im Jahre 1882 wurde der Irish Red Setter Club gegründet, der einen einheitlichen Zuchtstandard und Arbeitsprüfungen vorgab. Vor allem in England wurde die Rasse Ende des 19. Jahrhunderts gerne als Jagdhund eingesetzt, da sie ideal für das dort vorherrschende offene Gelände ist.<br>
-
-       Der Irish Setter gilt als der eleganteste und schönste der Setterrassen, was ihn auch zu einem beliebten Familien- und Ausstellungshund gemacht hat. Jedoch sollte man dabei nicht vergessen, dass er viel Energie und Arbeitsdrang mitbringt und entsprechend ausgelastet werden muss.<br>
-    </p>
-    <form id="geschichteTextarea" class="textareaInAndOut">
-      <textarea id="geschichteTextareaHide" onfocus="this.value= '';" onkeyup="test('geschichteTextareaHide', 'geschichteCounter');" maxlength="500">Ihre Meinung...</textarea>
-      <p>verbleibende Zeichen: <input id='geschichteCounter' type="text" name="leftwords" size="3"> <input type="submit" name="sub"></p>
-    </form>
-    <button onclick="hide('geschichteTextarea', 'geschichteCounter');">Textfeld Ein/Ausblenden</button>
-  </div>
-
-<!-- Wesen -->
-  <div id="Wesen" class="eintrag">
-    <h2>Wesen</h2>
-    <p>In erster Linie ist ein Irish Setter ein Jagsgebrauchshund, und sollte auch als solcher ausgelastet werden.
-      Er hat eine sehr gute Nase, bringt Apportierfreude und Wille zur Arbeit mit.
-      Er ist ausdauernd, temperamentvoll und ausgesprochen begeisterungsfähig.
-      Mit seinen Menschen gilt der Setter als charmant, liebenswürdig und anhänglich.
-      So sollte er ohne Härte, aber mit freundlicher Konsequenz erzogen werden. Unausgelastet oder unerzogen, kann er sich durch seinen Arbeitsdrang und seine Intelligenz aber auch zur mittelschweren Katastrophe entwickeln.<br>
-
-      Als der Irish Setter eine Zeit lang in Deutschland sehr in Mode war, fielen immer wieder recht nervöse und unsichere Exemplare auf.<br>
-      Dies gehört keinesfalls zum Rassestandard, obwohl der Irish Setter eine gewisse Sensibilität mitbringt.
-      Von einem guten Züchter erworben, ist der Irish Setter nach wie vor ein robuster und wesensfester Hund.<br>
-    </p>
-    <form id="wesenTextarea" class="textareaInAndOut">
-      <textarea id="wesenTextareaHide" onfocus="this.value= '';" onkeyup="test('wesenTextareaHide', 'wesenCounter');" maxlength="500">Ihre Meinung...</textarea>
-      <p>verbleibende Zeichen: <input id='wesenCounter' type="text" name="leftwords" size="3"> <input type="submit" name="sub"></p>
-    </form>
-    <button onclick="hide('wesenTextarea', 'wesenCounter');">Textfeld Ein/Ausblenden</button>
-  </div>
-
-<!-- Pflege -->
-  <div id="Pflege" class="eintrag">
-    <h2>Pflege</h2>
-    <p>Der Irish Setter ist voller Tatendrang. Er braucht Nasen- und Apportierarbeit sowie viel Bewegung, will man ihm als Nicht-Jäger gerecht werden.
-       Auch mit einer Ausbildung zum Such- oder Rettungshund kann man ihn angemessen beschäftigen.
-       tägliche wetterunabhängige, lange und aktive Spaziergang, sind das absolute Minimum, wenn er nicht verkümmern soll.
-       Gut ausgelastet, ist er im Haus sehr angenehm, menschenbezogen und ruhig. Mit Kindern und anderen Haustieren kommt er in der Regel gut aus, wenn beide Seiten gelernt haben, sich angemessen zu verhalten.
-       Da er Wasser liebt und Dreck ihn nicht stört, kommt er selten salonfähig von einem Spaziergang zurück. So sollte sein Halter in der Hinsicht nicht allzu penibel sein.<br>
-
-       Dank seiner Menschenfreundlichkeit, ist der Setter als Wachhund eher ungeeignet. Auch sollte er nicht im Zwinger, sondern mit engem Familienanschluss gehalten werden.<br>
-
-       Der Setter bringt selbstverständlich Jagdtrieb mit, der bei entsprechender Erziehung und Alternativbeschäftigung aber kontrollierbar ist.<br>
-       Freilauf ist damit theoretisch auch in wildreichem Gebiet möglich.
-
-       Um ein Verfilzen des Fells zu verhindern, muss der Irish Setter regelmäßig gebürstet werden.<br>
-    </p>
-    <form id="pflegeTextarea" class="textareaInAndOut">
-      <textarea id="pflegeTextareaHide" onfocus="this.value= '';" onkeyup="test('pflegeTextareaHide', 'pflegeCounter');" maxlength="500">Ihre Meinung...</textarea>
-      <p>verbleibende Zeichen: <input id='pflegeCounter' type="text" name="leftwords" size="3"> <input type="submit" name="sub"></p>
-    </form>
-    <button onclick="hide('pflegeTextarea', 'pflegeCounter');">Textfeld Ein/Ausblenden</button>
-  </div>
-
-<!-- Blog -->
-    <div id="Blog" class="eintrag">
-      <h2>Blog</h2>
-      <p>* Blogbeiträge *
-      </p>
-      <form id="blogTextarea" class="textareaInAndOut">
-        <textarea id="blogTextareaHide" onfocus="this.value= '';" onkeyup="test('blogTextareaHide', 'blogCounter');" maxlength="500">Ihre Meinung...</textarea>
-        <p>verbleibende Zeichen: <input id='blogCounter' type="text" name="leftwords" size="3"> <input type="submit" name="sub"></p>
-      </form>
-      <button onclick="hide('blogTextarea', 'blogCounter');">Textfeld Ein/Ausblenden</button>
-    </div>
-
-<!-- AJAX Beispiel -->
-<div class="eintrag">
-<div class="page-container">
-  <h1>Rassen Wiki</h1>
-  <section id="game-selector">
-    <span>Rasse: </span>
-    <select>
-      <option value="" disabled selected>Bitte auswählen...</option>
-      <option value="irishSetter.json">Irish Red Setter</option>
-      <option value="englishSetter.json">English Setter</option>
-      <option value="gordonSetter.json">Gordon Setter</option>
-      <option value="redAndWhiteSetter.json">Irish Red and White Setter</option>
-    </select>
-  </section>
-  <section id="game-panel">
-    <h2 class="title">Keine Rasse ausgewählt.</h2>
-    <a class="ref" target="_blank" href="#">
-      <span class="label"></span>
-    </a>
-    <p class="description"></p>
-  </section>
-</div>
-</div>
-
-</body>
+  </body>
 </html>
