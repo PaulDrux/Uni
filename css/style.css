@@ -18,6 +18,7 @@ body {
 }
 
 .topnav li a {
+  color: black;
   display: block;
   margin: 30px 35px 30px 35px;
   align-content: center;
@@ -35,4 +36,47 @@ body {
   .topnav li {
     float: none;
   }
+}
+
+/* Eigentliches Spiel */
+.border {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px none #A3BFC9;
+  border-radius: 30px;
+  height: 500px;
+  width: 500px;
+  background-color: #bedbe6;
+}
+
+.button {
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  padding: 15px 20px;
+  font-weight: bold;
+  color: black;
+  background-color: #94c0d4;
+  text-align: center;
+}
+
+#spielbutton {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#spielbutton:hover {
+  background-color: #76a0b3;
+}
+
+#neustartbutton {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
 }
