@@ -1,0 +1,20 @@
+{
+  Präsidenten:
+  [
+    {
+      name: "Barack Obama",
+      alter: 55,
+      verheiratet: true
+    }
+    {
+      name: "Donald Trump"
+      alter: 67,
+      verheiratet: true
+    }
+    {
+      name: "Angela Merkel"
+      alter: 55,
+      verheiratet: true
+    }
+  ]
+}
