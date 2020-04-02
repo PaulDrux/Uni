@@ -80,3 +80,7 @@ body {
   transform: translate(-50%, -50%);
   width: 100px;
 }
+
+#neustartbutton:hover {
+  background-color: #76a0b3;
+}
