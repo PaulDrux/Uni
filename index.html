@@ -9,6 +9,7 @@
   <meta name="author" content="Paul Drux" />
   <meta name="keywords" content="Testseite" />
   <link rel="stylesheet" href="./css/style.css" />
+  <script src="javascript/javascript.js"></script>
 </head>
 
 <body>
@@ -24,8 +25,8 @@
 
   <!-- Eigentliches Spiel -->
   <div class="border">
-    <input type="button" value="Würfeln" class="button" id="spielbutton">
-    <label id="scorelabel">Score: <span></span></label>
+    <button onclick="changeColor('blue');" id="spielbutton" class="button">Würfeln</button>
+    <label id="scorelabel">Score: <span id="scorespan"></span></label>
     <input txpe="button" value="Neu starten" class="button" id="neustartbutton">
   </div>
 
