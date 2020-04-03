@@ -1,15 +1,17 @@
-var max = 6;
-
-function randNumber(max) {
-  var x = Math.random(max);
+// Funktion zum Würfeln
+function wuerfeln() {
+  var zufallszahl = Math.floor(Math.random() * 6) + 1;
+  document.getElementById('currentnumberlabel').innerHTML = zufallszahl;
+  console.log(zufallszahl);
+  var counter = 0;
+  counter += zufallszahl;
+  console.log(counter);
+  // updateZwischenstand(zufallszahl);
 }
 
-var newScore = function(number) {
-  newScore += number;
-  return newScore;
-}
-
-function changeColor(color) {
-  var element = document.getElementById('scorelabel');
-  element.style.color = color;
-}
+// function updateZwischenstand(zahl) {
+//   var ergebnis = [];
+//   ergebnis.push(zahl);
+//
+//   document.getElementById('zwischenstandlabel').innerHTML = count;
+// }
