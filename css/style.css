@@ -51,7 +51,8 @@ body {
   background-color: #bedbe6;
 }
 
-.button {
+/* Button Style & Position */
+.buttonstyle {
   border: none;
   border-radius: 30px;
   font-size: 18px;
@@ -64,7 +65,7 @@ body {
 
 #spielbutton {
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -73,14 +74,108 @@ body {
   background-color: #76a0b3;
 }
 
-#neustartbutton {
+#quitbutton {
   position: absolute;
-  top: 75%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100px;
 }
 
-#neustartbutton:hover {
+#quitbutton:hover {
   background-color: #76a0b3;
+}
+
+/* Label Style & Position */
+.labelstyletext {
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+  padding: 15px 20px;
+  font-weight: bold;
+  color: black;
+  background-color: #EFF6F7;
+  text-align: center;
+}
+
+#currentnumberlabeltext {
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+
+#faktorlabeltext {
+  position: absolute;
+  top: 50%;
+  left: 29%;
+  transform: translate(-50%, -50%);
+}
+
+#zwischenstandlabeltext {
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+}
+
+#scorelabeltext {
+  position: absolute;
+  top: 65%;
+  left: 33%;
+  transform: translate(-50%, -50%);
+}
+
+/* Span Style & Position */
+.labelstyle {
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+  padding: 15px 20px;
+  font-weight: bold;
+  color: black;
+  background-color: #87B2B5;
+  text-align: center;
+}
+
+#currentnumberlabel {
+  position: absolute;
+  top: 35%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+
+#faktorlabel {
+  position: absolute;
+  top: 50%;
+  left: 44.5%;
+  transform: translate(-50%, -50%);
+}
+
+#zwischenstandlabel {
+  position: absolute;
+  top: 50%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+}
+
+#scorelabel {
+  position: absolute;
+  top: 65%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+#livelabeltext {
+  position: absolute;
+  top: 92.5%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+
+#livelabel {
+  position: absolute;
+  top: 92.5%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  background-color: #AB4E68;
 }

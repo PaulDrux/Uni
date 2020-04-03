@@ -25,9 +25,21 @@
 
   <!-- Eigentliches Spiel -->
   <div class="border">
-    <button onclick="changeColor('blue');" id="spielbutton" class="button">Würfeln</button>
-    <label id="scorelabel">Score: <span id="scorespan"></span></label>
-    <input txpe="button" value="Neu starten" class="button" id="neustartbutton">
+    <button onclick="wuerfeln()" id="spielbutton" class="buttonstyle">Würfeln</button>
+    <div>
+      <label id="currentnumberlabeltext" class="labelstyletext">Gewürfelte Zahl: </label>
+      <label id="currentnumberlabel" class="labelstyle">?</label>
+      <label id="faktorlabeltext" class="labelstyletext">Faktor: </label>
+      <label id="faktorlabel" class="labelstyle"><span id="faktorspan">6</span></label>
+      <label id="zwischenstandlabeltext" class="labelstyletext">Zwischenstand: </label>
+      <label id="zwischenstandlabel" class="labelstyle">0</label>
+      <label id="scorelabeltext" class="labelstyletext">Punktekonto: </label>
+      <label id="scorelabel" class="labelstyle"><span id="scorespan">6</span></label>
+    </div>
+    <button onclick="" id="quitbutton" class="buttonstyle">Beenden</button>
+    <label id="livelabeltext" class="labelstyletext">Leben</label>
+    <label id="livelabel" class="labelstyle"><span>3</span></label>
+
   </div>
 
 
