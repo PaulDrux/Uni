@@ -1,6 +1,8 @@
 // Funktion zum Würfeln
 var zufallszahl;
+var intermediateScore = 0;
 var score = 0;
+var lives = 3;
 
 function generate() {
   zufallszahl = Math.floor(Math.random() * 6) + 1;
@@ -8,21 +10,45 @@ function generate() {
 }
 
 function wuerfeln() {
-  console.log("Alt " + zufallszahl);
-  var x = generate();
-  document.getElementById('currentnumberlabel').innerHTML = zufallszahl;
-  console.log(x);
-  console.log("Neu " + zufallszahl);
-  changeIntermediateResult();
+  if (lives != 0) {
+    var x = generate();
+    document.getElementById('currentnumberlabel').innerHTML = zufallszahl;
+    console.log(x);
+    if (x != 6) {
+      changeIntermediateResult();
+    } else if (x === 6) {
+      window.alert("Leben verloren");
+      changeLives();
+      intermediateScore = 0;
+      document.getElementById('zwischenstandlabel').innerHTML = intermediateScore;
+    }
+  }
 }
 
 function changeIntermediateResult() {
-  score = score + zufallszahl;
-  console.log("Inter: " + score);
-  document.getElementById('zwischenstandlabel').innerHTML = score;
+  intermediateScore = intermediateScore + zufallszahl;
+  document.getElementById('zwischenstandlabel').innerHTML = intermediateScore;
 }
 
-function reset() {
-  score = 0;
-  document.getElementById('zwischenstandlabel').innerHTML = score;
+function saveIntermediate() {
+  saveScore();
+  intermediateScore = 0;
+  document.getElementById('zwischenstandlabel').innerHTML = intermediateScore;
+  document.getElementById('currentnumberlabel').innerHTML = '?';
+}
+
+function saveScore() {
+  score = score + intermediateScore;
+  document.getElementById('scorelabel').innerHTML = score;
+}
+
+function changeLives() {
+  if (lives > 1) {
+    lives -= 1;
+  } else {
+    lives -= 1;
+    window.alert("Keine Leben mehr");
+    document.getElementById('livelabel').innerHTML = lives;
+  }
+  document.getElementById('livelabel').innerHTML = lives;
 }
