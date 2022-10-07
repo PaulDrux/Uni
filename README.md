@@ -2,4 +2,4 @@
 ***
 Diese Umgebung ist zur Übung innerhalb des **Studiums** gedacht.
 
-[^1]: Paul Drux.
+[^1] Paul Drux.
